@@ -143,3 +143,15 @@ The goal is to treat the homelab as an operations practice environment: document
 ## Notes on Bandit Documentation
 
 The Bandit section is organized by infrastructure concepts, not by challenge level. It does not include passwords, flags, or direct challenge solutions. The focus is on transferable skills such as permissions analysis, SSH authentication, network service inspection, TLS validation, cron review, SetUID behavior, and Git history investigation.
+
+Bandit practice strengthened my command-line troubleshooting habits in these areas:
+
+- Handling hidden files, filenames with spaces, and filenames that begin with option-like characters
+- Searching files by metadata such as size, owner, group, readability, and executable status
+- Filtering command output with `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, and archive tools
+- Connecting to SSH services with non-standard ports, private keys, and non-interactive commands
+- Testing local TCP services with `nc`, `ncat`, `telnet`, and small authorized port scans
+- Inspecting TLS-wrapped services with `openssl s_client` and `ncat --ssl`
+- Understanding SetUID behavior, effective users, and restricted shell behavior
+- Reviewing cron jobs, scheduled scripts, output redirection, and run-as users
+- Investigating Git history, branches, tags, ignored files, and SSH-based Git remotes
