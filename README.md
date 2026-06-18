@@ -67,6 +67,28 @@ This repository is organized around the core areas I am strengthening for infras
 - Security-minded command-line practice through OverTheWire Bandit
 - Homelab documentation and repeatable setup notes
 
+## Recommended Review Path
+
+For recruiters and infrastructure reviewers, the strongest evidence is in these documents:
+
+1. [OCI Ubuntu Server Setup](homelab/oci-server-setup.md): end-to-end server provisioning, SSH hardening, baseline tooling, Docker preparation, and validation checks.
+2. [Homelab Architecture](homelab/architecture.md): cloud-hosted lab layout, access boundaries, service boundaries, and operational workflows.
+3. [SSH Operations](networking/ssh.md): key-based access, client configuration, port forwarding, server-side checks, and troubleshooting workflow.
+4. [Linux Permissions](linux/permissions.md): ownership, permission modes, special bits, SSH key permissions, and service access troubleshooting.
+5. [GitHub Runner Installation](github-runner/installation.md): self-hosted runner setup, `systemd` service management, validation workflow, and security considerations.
+6. [Bandit Learning Notes](bandit/linux-permissions.md): command-line troubleshooting practice organized by infrastructure concepts instead of challenge answers.
+
+## Portfolio Evidence
+
+This repository is intended to show practical infrastructure readiness through documentation, not application code. The main evidence areas are:
+
+- A repeatable Ubuntu server setup process on OCI
+- Secure remote access practices with SSH keys and service validation
+- Linux troubleshooting workflows for permissions, processes, disks, services, and logs
+- Network troubleshooting across host checks and cloud firewall assumptions
+- Container and GitHub runner operations on a managed Linux host
+- Clear notes from command-line security practice without exposing challenge secrets
+
 ## Repository Structure
 
 ```text
